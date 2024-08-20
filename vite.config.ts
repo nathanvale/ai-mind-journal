@@ -76,7 +76,6 @@ export default {
 						name: process.env.COMMIT_SHA,
 						setCommits: {
 							auto: true,
-							ignoreMissing: true,
 						},
 					},
 					sourcemaps: {
