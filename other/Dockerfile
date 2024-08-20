@@ -33,9 +33,8 @@ ARG COMMIT_SHA
 ENV COMMIT_SHA=$COMMIT_SHA
 
 # Use the following environment variables to configure Sentry
-# ENV SENTRY_ORG=
-# ENV SENTRY_PROJECT=
-
+ENV SENTRY_ORG=arthur-b-consulting
+ENV SENTRY_PROJECT=my-ai-journal
 
 WORKDIR /myapp
 
