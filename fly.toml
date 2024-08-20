@@ -1,5 +1,5 @@
-app = "epic-stack-template"
-primary_region = "sjc"
+app = "my-ai-journal-8612"
+primary_region = "syd"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = [ ]
