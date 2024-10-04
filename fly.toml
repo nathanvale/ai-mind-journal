@@ -1,4 +1,4 @@
-app = "my-ai-journal"
+app = "ai-mind-journal"
 primary_region = "syd"
 kill_signal = "SIGINT"
 kill_timeout = 5
