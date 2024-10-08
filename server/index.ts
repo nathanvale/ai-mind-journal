@@ -116,7 +116,7 @@ app.use(
 					process.env.SENTRY_DSN ? '*.sentry.io' : null,
 					"'self'",
 				].filter(Boolean),
-				'font-src': ["'self'"],
+				'font-src': ["'self'", 'https://fonts.scalar.com'],
 				'frame-src': ["'self'"],
 				'img-src': ["'self'", 'data:'],
 				'script-src': [
@@ -201,7 +201,7 @@ async function getBuild() {
 		const build = viteDevServer
 			? await viteDevServer.ssrLoadModule('virtual:remix/server-build')
 			: // @ts-expect-error - the file might not exist yet but it will
-				// eslint-disable-next-line import/no-unresolved
+				 
 				await import('../build/server/index.js')
 
 		return { build: build as unknown as ServerBuild, error: null }

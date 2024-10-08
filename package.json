@@ -44,6 +44,7 @@
     "/server-build"
   ],
   "dependencies": {
+    "@asteasolutions/zod-to-openapi": "^7.2.0",
     "@conform-to/react": "^1.1.5",
     "@conform-to/zod": "^1.1.5",
     "@epic-web/cachified": "^5.2.0",
