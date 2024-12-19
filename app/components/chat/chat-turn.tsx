@@ -22,7 +22,7 @@ const Message = ({ onEditOpen }: MessageProps) => {
 			className="text-message flex min-h-[20px] w-full flex-col items-end gap-2 whitespace-normal break-words"
 		>
 			<div className="flex w-full flex-col items-end gap-1 empty:hidden rtl:items-start">
-				<div className="relative max-w-[70%] rounded-3xl bg-blue-500 px-5 py-2.5 text-white">
+				<div className="relative max-w-[70%] rounded-3xl bg-primary px-5 py-2.5 text-primary-foreground">
 					<div className="whitespace-pre-wrap">My turn goes like this</div>
 					<div className="absolute bottom-0 right-full top-0 -mr-3.5 hidden pr-5 pt-1 group-hover:block">
 						<span className="" data-state="closed">
@@ -32,10 +32,10 @@ const Message = ({ onEditOpen }: MessageProps) => {
 										<Button
 											variant="ghost"
 											size="icon"
-											className="flex h-10 w-10 items-center justify-center rounded-full hover:bg-secondary"
+											className="flex h-10 w-10 items-center justify-center rounded-full"
 											onClick={onEditOpen}
 										>
-											<Icon name="pencil" className="h-5 w-5 text-black" />
+											<Icon name="pencil" className="h-5 w-5" />
 											<span className="sr-only">Edit message</span>
 										</Button>
 									</TooltipTrigger>

@@ -70,6 +70,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 		})
 	} catch (error: unknown) {
 		const err = error as CustomError
+		console.error(err)
 
 		const serverError = 'An error occured on the server.'
 

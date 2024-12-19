@@ -31,7 +31,7 @@ export function SideNavigation({ isSheet }: SideNavigationProps) {
 			)
 
 	return (
-		<div className="bg-surface relative h-full w-full flex-1 items-start">
+		<div className="relative h-full w-full flex-1 items-start bg-card">
 			{/* This provides context  to users with disabilities */}
 			<h2 className="clip-rect(0,0,0,0) overflow-wrap-normal absolute m-[-1px] h-px w-px overflow-hidden whitespace-nowrap border-0 p-0">
 				Navigation and recent journal entries

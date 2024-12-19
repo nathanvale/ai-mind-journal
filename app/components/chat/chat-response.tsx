@@ -37,8 +37,8 @@ export const ChatResponse = ({ isMostRecentResponse }: ChatRespoonseProps) => {
 					className="flex min-h-[20px] w-full flex-col items-start gap-2 whitespace-normal break-words rounded-3xl"
 				>
 					<div className="flex w-full flex-col items-start gap-1 empty:hidden rtl:items-end">
-						<div className="relative max-w-[70%] rounded-3xl bg-secondary px-5 py-2.5">
-							<div className="whitespace-pre-wrap">
+						<div className="relative max-w-[70%] rounded-3xl border border-border bg-card px-5 py-2.5">
+							<div className="whitespace-pre-wrap text-secondary-foreground">
 								It is a long established fact that a reader will be distracted
 								by the readable content of a page when looking at its layout.
 								The point of using Lorem Ipsum is that it has a more-or-less

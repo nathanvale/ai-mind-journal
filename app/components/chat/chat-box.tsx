@@ -34,6 +34,9 @@ export const formatElaspedTime = (time: number) => {
 		.join(':')
 	return formattedTime
 }
+
+const errorClasses =
+	'bg-red-500 hover:bg-red-600 focus-visible:ring-red-600 focus-within:ring-red-600'
 export const ChatBox = () => {
 	const fetcherKeyRef = useRef<string>(Date.now().toString())
 	const fetcherKey = fetcherKeyRef.current
@@ -71,7 +74,6 @@ export const ChatBox = () => {
 
 	// Helper function to render the action button
 	const renderActionButton = () => {
-		const errorClasses = 'bg-red-500 text-white hover:bg-red-600'
 		const actionButtonClasses = cn('h-8 w-8 rounded-full')
 		const actionButtonErrorClasses = cn(
 			actionButtonClasses,
@@ -132,7 +134,7 @@ export const ChatBox = () => {
 					variant="ghost"
 					className={cn(
 						actionItemClasses,
-						'font-semibold text-red-500 hover:text-red-600',
+						'font-semibold text-red-500 focus-within:ring-red-600 hover:text-red-600 focus-visible:ring-red-600',
 					)}
 					onClick={handleRetryProcessing}
 				>
@@ -164,15 +166,14 @@ export const ChatBox = () => {
 				<div className="mx-auto flex flex-1 gap-4 text-base md:max-w-3xl md:gap-5 lg:max-w-[40rem] lg:gap-6 xl:max-w-[48rem]">
 					<div className="w-full">
 						<div className="flex w-full flex-col gap-1.5 rounded-[26px] bg-secondary p-1.5 transition-colors">
-							<div className="flex items-center gap-1.5 pl-2 pr-2 md:gap-2">
+							<div className="flex items-center gap-2 px-2 md:gap-2">
 								{recorderState.isRecording && (
 									<Button
 										size="icon"
 										onClick={handleCancelRecording}
 										className={cn(
 											'h-6 w-6 rounded-full',
-											recorderState.error &&
-												'bg-red-500 text-white hover:bg-red-600',
+											recorderState.error && errorClasses,
 										)}
 										disabled={recorderState.isProcessing}
 									>

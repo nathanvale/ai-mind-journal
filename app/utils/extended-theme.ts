@@ -2,6 +2,22 @@ import { type Config } from 'tailwindcss'
 
 export const extendedTheme = {
 	colors: {
+		scale: {
+			50: 'hsl(var(--scale-50))',
+			100: 'hsl(var(--scale-100))',
+			200: 'hsl(var(--scale-200))',
+			300: 'hsl(var(--scale-300))',
+			400: 'hsl(var(--scale-400))',
+			500: 'hsl(var(--scale-500))',
+			600: 'hsl(var(--scale-600))',
+			700: 'hsl(var(--scale-700))',
+			800: 'hsl(var(--scale-800))',
+			900: 'hsl(var(--scale-900))',
+			950: 'hsl(var(--scale-950))',
+		},
+		height: {
+			'header-height': 'var(--header-height)',
+		},
 		border: 'hsl(var(--border))',
 		input: {
 			DEFAULT: 'hsl(var(--input))',
@@ -16,6 +32,7 @@ export const extendedTheme = {
 			DEFAULT: 'hsl(var(--foreground))',
 			destructive: 'hsl(var(--foreground-destructive))',
 		},
+		surface: 'hsl(var(--muted) / 40%)',
 		primary: {
 			DEFAULT: 'hsl(var(--primary))',
 			foreground: 'hsl(var(--primary-foreground))',
